@@ -1,0 +1,58 @@
+body {
+	/* background: #ffd9d4; */
+	background: #fff9f5
+		url(../images/hero-bg1_omm6sr.svg)
+		no-repeat 50%;
+	cursor: default;
+    min-height: 100vh;
+}
+
+.login-card {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.login-card h1 {
+    text-align: center;
+}
+
+.login-button {
+    padding: 20px;
+    width: 45%;
+    margin: 10px 0;
+}
+
+#login-failed-text {
+    color: red;
+    display: none;
+}
+
+.mobile-form {
+    display: none;
+    padding: 100px 30px;
+    /* text-align: center; */
+}
+
+@media only screen and (max-width: 48em) {
+    .box {
+        display: none !important;
+    }
+
+    .login-card {
+        display: none;
+    }
+
+    .mobile-form {
+        display: block;
+    }
+
+    .login-button {
+        width: 100%;
+    }
+
+    .mobile-form h1 {
+        font-size: 2rem;
+    }
+}

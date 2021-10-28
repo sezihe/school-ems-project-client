@@ -1,0 +1,64 @@
+body {
+	/* background: #ffd9d4; */
+	background: #fff9f5
+		url(../images/hero-bg1_omm6sr.svg)
+		no-repeat 50%;
+	cursor: default;
+    min-height: 100vh;
+}
+
+.main h1, p {
+    text-align: center;
+}
+
+.hero-block {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin: 0 auto;
+	width: 83%;
+	padding: 0px 0 53px;
+}
+
+.email-form {
+    margin-top: 20px;
+    padding: 40px;
+    width: 100%;
+}
+
+.align-right {
+    text-align: right;
+    border: 0;
+}
+
+.small-text-block {
+    position: relative;
+	flex: 0 0 45%;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+    
+}
+
+.block-mobile {
+    display: none;
+}
+
+.block-mobile .small-text-block {
+    position: relative;
+	flex: 0 0 45%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 48em) {
+    .block {
+        display: none;
+    }
+
+    .block-mobile {
+        display: block;
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../app.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/admin-home.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap);
+    </style>
+    <title>ADMIN - School Notification System</title>
+</head>
+
+<body>
+    <nav id="navigation-top" class="navigation">
+        <a href="/" aria-current="page">
+            <img src="../images/logo_transparent.png" alt="School EMS Logo" id="logo">
+        </a>
+        <ul class="navigation_menu">
+            <li class="fallback"></li>
+            <li>
+                <button class="navigation_menu-item navigation_menu-link"> Sign Out </button>
+            </li>
+        </ul>
+        <button type="button" class="navigation_btn">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </button>
+    </nav>
+
+    <div class="main">
+        <h1 class="title test"> Welcome Back! </h1>
+        <p class="subtitle">Send out <strong>Emails</strong> to every subscribed student reminding them about a class
+        </p>
+
+        <div class="block">
+            <header class="hero-block">
+                <div class="email-form">
+                    <form class="box" style="padding: 30px; background-color: #f0eeeb;">
+                        <div class="field">
+                            <label class="label">Subject</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="eg: COS 333 CLASS REMINDER">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Email Message"></textarea>
+                            </div>
+                        </div>
+
+
+                        <h4 style="color: #A0B0FE;"> Does this email contain HTML content? </h4>
+
+                        <div class="field" style="margin-top: 5px;">
+                            <div class="control">
+                                <label class="radio">
+                                    <input type="radio" name="question">
+                                    Yes
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="question">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="align-right">
+                            <button id="send-email-btn" class="button is-link">Send Broadcast Email</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="small-text-block">
+                    <article class="panel is-success">
+                        <p class="panel-heading">
+                            Good Class Reminder Email
+                        </p>
+
+                        <a class="panel-block is-active">
+                            <span class="panel-icon">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </span>
+                            Exact Time Of Class
+                        </a>
+                        <a class="panel-block is-active">
+                            <span class="panel-icon">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </span>
+                            Exact Location Of The class.
+                        </a>
+                    </article>
+                </div>
+            </header>
+        </div>
+
+
+        <div class="block-mobile">
+            <div class="email-form">
+                <form>
+                    <div class="field">
+                        <label class="label">Subject</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="eg: COS 333 CLASS REMINDER">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Email Message"></textarea>
+                        </div>
+                    </div>
+
+
+                    <h4 style="color: #A0B0FE;"> Does this email contain HTML content? </h4>
+
+                    <div class="field" style="margin-top: 5px;">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                Yes
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="align-right">
+                        <button id="send-email-btn" class="button is-link">Send Broadcast Email</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="small-text-block">
+                <article class="panel is-success">
+                    <p class="panel-heading">
+                        Good Class Reminder Email
+                    </p>
+
+                    <a class="panel-block is-active">
+                        <span class="panel-icon">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        Exact Time Of Class
+                    </a>
+                    <a class="panel-block is-active">
+                        <span class="panel-icon">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        Exact Location Of The class.
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
